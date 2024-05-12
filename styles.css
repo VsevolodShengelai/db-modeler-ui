@@ -21,7 +21,14 @@ body, html {
 
 .nav-item {
     margin: 5px 5px; /* Отступы сверху и снизу, и по 10px слева и справа */
-    padding: 5px;
+    padding: 8px;
+}
+
+.share img {
+    filter: brightness(0) invert(1); 
+    height: 16px;
+    width: auto; /* сохраняет пропорции иконки */
+    margin-right: 5px;
 }
 
 /* Убираем удвоенный марджин между элементами */
@@ -31,6 +38,16 @@ body, html {
 
 .nav-item:not(:first-child) {
     margin-left: 0; /* Убираем левый марджин у всех элементов кроме первого */
+}
+
+.share {
+    background-color: #373c44;
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+.share:hover, .share:active {
+    background-color: #4a515a; /* Светлее при наведении или активации */
 }
 
 .main-content {
