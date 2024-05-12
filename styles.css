@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 8%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-content {
+    display: flex;
+    height: 90%;
+}
+
+.left-panel, .right-panel, .center-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-panel, .right-panel {
+    width: 20%;
+    background-color: #f8f9fa;
+}
+
+.center-panel {
+    width: 60%;
+    background-color: #e9ecef;
+}
+
+.left-panel {
+    background-color: #6c757d; /* Добавим разные цвета для наглядности */
+}
+
+.right-panel {
+    background-color: #adb5bd; /* Добавим разные цвета для наглядности */
+}
