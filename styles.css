@@ -80,7 +80,7 @@ body, html {
 
 .main-content {
     display: flex;
-    height: 90%;
+    height: 95%;
 }
 
 .left-panel, .right-panel, .center-panel {
