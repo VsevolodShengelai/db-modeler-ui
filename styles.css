@@ -20,8 +20,42 @@ body, html {
 }
 
 .nav-item {
+    background-color: #373c44;
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s; /* Плавное изменение фона */
     margin: 5px 5px; /* Отступы сверху и снизу, и по 10px слева и справа */
     padding: 8px;
+    position: relative; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    left: 0; /* Выравниваем меню строго под 'Explore' */
+    top: 100%; /* Позиционируем меню сразу под элементом 'Explore' */
+    background-color: #373c44;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0; /* Убедимся, что нет дополнительного верхнего поля */
+    padding: 0; /* Убираем внутренние отступы у списка, если они были */
+}
+
+.dropdown-content li {
+    color: white;
+    font-size: small;
+    padding: 12px 16px; /* Поддерживаем отступы для визуального комфорта внутри пунктов меню */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1; /* Цвет фона при наведении на пункт меню */
+}
+
+.nav-item:hover .dropdown-content {
+    display: block; /* Показать дропдаун при наведении на 'Explore' */
 }
 
 .share img {
@@ -40,13 +74,7 @@ body, html {
     margin-left: 0; /* Убираем левый марджин у всех элементов кроме первого */
 }
 
-.share {
-    background-color: #373c44;
-    border-radius: 5px; /* Скругление углов */
-    transition: background-color 0.3s; /* Плавное изменение фона */
-}
-
-.share:hover, .share:active {
+.nav-item:hover, .nav-item:active {
     background-color: #4a515a; /* Светлее при наведении или активации */
 }
 
