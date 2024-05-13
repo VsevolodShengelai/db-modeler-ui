@@ -58,7 +58,7 @@ body, html {
     display: block; /* Показать дропдаун при наведении на 'Explore' */
 }
 
-.share img {
+.icon img {
     filter: brightness(0) invert(1); 
     height: 16px;
     width: auto; /* сохраняет пропорции иконки */
